@@ -34,3 +34,8 @@ def get_route():
 @app.get("/ping")
 def ping():
     return {"ping": "pong"}
+
+
+@app.get("/")
+def root():
+    return {"message": "ParAStar API is running"}
