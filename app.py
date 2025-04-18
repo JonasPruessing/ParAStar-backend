@@ -6,8 +6,11 @@ from fastapi.responses import JSONResponse
 
 app = FastAPI()
 app.add_middleware(
-  CORSMiddleware, allow_origins=["*"], allow_methods=["*"],
-  allow_headers=["*"], allow_credentials=True
+  CORSMiddleware,
+  allow_origins=["https://spectacular-treacle-dec568.netlify.app/"],
+  allow_methods=["*"],
+  allow_headers=["*"],
+  allow_credentials=True,
 )
 
 
